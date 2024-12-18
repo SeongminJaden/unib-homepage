@@ -1,0 +1,79 @@
+.header {
+  background-color: transparent; /* 배경을 투명으로 설정 */
+  color: black; /* 글자 색상: 검정색 */
+  box-shadow: none; /* 그림자 제거 */
+  font-family: 'Roboto', sans-serif; /* 폰트: Roboto 레귤러 */
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* 네비바를 가로 중앙에 배치 */
+  align-items: center; /* 세로 중앙에 배치 */
+  width: 100%; /* 전체 영역 가로 100%로 설정 */
+  height: 100%; /* 네비바의 높이를 부모인 .header와 동일하게 설정 */
+  margin: 0 auto; /* 화면 중앙에 배치 */
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 125px; /* 각 박스 간 간격을 125px로 설정 */
+}
+
+.navItem {
+  width: 100px; /* 각 박스의 가로 크기 */
+  height: 16px; /* 각 박스의 세로 크기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* ::before를 사용하기 위해 relative 위치 설정 */
+}
+
+.navItem a {
+  text-decoration: none;
+  color: black; /* 글자 색상: 검정색 */
+  font-size: 12px; /* 글자 크기: 12px */
+  font-family: 'Roboto', sans-serif; /* 폰트: Roboto 레귤러 */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* 버튼 기본 스타일 초기화 */
+button {
+  all: unset;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  position: relative; /* 윗줄을 추가하기 위해 position을 relative로 설정 */
+}
+
+/* 버튼 위에 윗줄 추가 */
+button::before {
+  content: "";
+  position: absolute;
+  top: -4px; /* 글자 위의 선과 간격 설정 */
+  left: 0;
+  width: 100%; /* 선 길이를 버튼 크기만큼 설정 */
+  height: 1px;
+  background-color: black; /* 선 색상 설정 */
+  transform: scaleX(0); /* 초기 상태에서는 선이 보이지 않도록 설정 */
+  transform-origin: top right;
+  transition: transform 0.3s ease;
+}
+
+/* 호버 시 윗줄이 나타나도록 설정 */
+button:hover::before {
+  transform: scaleX(1); /* 호버 시 위에 선이 나타남 */
+  transform-origin: top left;
+}

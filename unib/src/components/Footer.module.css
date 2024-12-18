@@ -1,0 +1,32 @@
+.footer {
+  background-color: #2C2C2C;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 위쪽으로 정렬 */
+  padding: 20px 135px; /* 좌우 10% 여백 */
+  min-height: 160px;
+}
+
+.footerLeft, .footerRight {
+  width: 585px; /* 각 섹션의 너비를 45%로 설정 */
+}
+
+.footerLeft {
+  text-align: left;
+}
+
+.footerRight {
+  text-align: right;
+}
+
+.footerRight a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer p {
+  margin: 5px 0;
+}
