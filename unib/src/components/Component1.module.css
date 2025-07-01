@@ -1,0 +1,153 @@
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: auto;
+  /* min-height: 70vh; */
+  /* background: #f8f9fa; */
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.leftArea {
+  flex: 0 0 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  background: transparent;
+  height: auto;
+  padding: 0 2vw 0 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.textGroup {
+  margin-bottom: 48px;
+}
+
+.subTitle {
+  font-family: 'Segoe UI', 'San-serif', Arial;
+  font-weight: 500;
+  color: #4056B3;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Segoe UI', 'San-serif', Arial;
+  font-weight: bold;
+  color: #1D1D1F;
+  font-size: 46px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.slideNav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.slideBtn {
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.slideBtn:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.pageIndicator {
+  font-family: 'Segoe UI', 'San-serif', Arial;
+  font-weight: 300;
+  font-size: 18px;
+  color: #888;
+  letter-spacing: 0.04em;
+  margin: 0 8px;
+}
+.pageNum, .pageTotal {
+  font-weight: 300;
+}
+
+.rightArea {
+  flex: 0 0 64%;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+  overflow: visible;
+}
+
+.heroImg {
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  object-fit: contain;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 1;
+}
+
+.viewMoreBtn {
+  position: absolute;
+  bottom: 24px;
+  right: 5vw;
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px 12px 24px;
+  font-family: 'Segoe UI', 'San-serif', Arial;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+  z-index: 3;
+}
+.viewMoreBtn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(64,86,179,0.16);
+}
+
+.arrow {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 2px;
+} 
