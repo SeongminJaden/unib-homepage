@@ -5,12 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* 위쪽으로 정렬 */
-  padding: 20px 135px; /* 좌우 10% 여백 */
-  min-height: 160px;
+  padding: 1.04vw 7vw;
+  min-height: 8.3vw;
 }
 
 .footerLeft, .footerRight {
-  width: 585px; /* 각 섹션의 너비를 45%로 설정 */
+  width: 30.5vw;
 }
 
 .footerLeft {
@@ -27,6 +27,17 @@
   font-weight: bold;
 }
 
-.footer p {
-  margin: 5px 0;
+.footer p, .footer a {
+  margin-top: 0.42vw;
+  margin-bottom: 0.42vw;
+}
+
+@media (max-width: 1536px) {
+  .footer {
+    min-width: 1170px;
+    width: 1170px;
+  }
+  .footerLeft, .footerRight {
+    width: 585px;
+  }
 }

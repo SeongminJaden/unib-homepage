@@ -5,7 +5,12 @@ const Header = () => {
   const scrollToComponent = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerHeight = 102; // 헤더 높이(px)
+      const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementTop - headerHeight,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -20,7 +25,7 @@ const Header = () => {
             <button onClick={() => scrollToComponent("VISION")}>VISION</button>
           </li>
           <li className={styles.navItem}>
-            <button onClick={() => scrollToComponent("PRODUCTS")}>PRODUCTS</button>
+            <button onClick={() => scrollToComponent("Record")}>RECORD</button>
           </li>
           <li className={styles.navItem}>
             <button onClick={() => scrollToComponent("REFERENCE")}>REFERENCE</button>

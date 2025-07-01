@@ -1,0 +1,167 @@
+.sectionBg {
+  width: 100%;
+  background: transparent;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', Arial, sans-serif;
+  padding: 48px 0 48px 0;
+  box-sizing: border-box;
+}
+
+.recordHeader {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.recordTitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #2F3C88;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.recordSlogan {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.recordSloganEn {
+  display: block;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.recordRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.recordBox {
+  flex: 1 1 0;
+  min-width: 0;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: #F9F9F9;
+  box-shadow: 0 2px 12px rgba(64,86,179,0.06);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 12px;
+}
+
+.recordBoxTitle {
+  font-size: 1.35rem;
+  color: #2F3C88;
+  margin-bottom: 18px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.recordList {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.recordList li {
+  margin-bottom: 10px;
+}
+
+.hashtags {
+  color: #2F3C88;
+  font-size: 0.98rem;
+  margin-top: auto;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .recordRow {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .recordBox {
+    width: 100%;
+    margin: 0 0 18px 0;
+  }
+}
+
+.collabRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.collabBox {
+  flex: 1 1 0;
+  min-width: 0;
+  /* aspect-ratio: 1/1; */
+  background: none;
+  /* border: 1px solid #d0d0d0; */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.collabDivider {
+  width: 1px;
+  min-width: 1px;
+  max-width: 1px;
+  background: #d0d0d0;
+  align-self: stretch;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.collabBoxTitle {
+  font-size: 1.35rem;
+  color: #222;
+  margin-bottom: 18px;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.collabImgRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.collabImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  align-self: unset;
+} 

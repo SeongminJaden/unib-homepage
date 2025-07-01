@@ -1,0 +1,82 @@
+.sectionBg {
+  width: 100%;
+  background: transparent;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', Arial, sans-serif;
+  padding: 48px 0 48px 0;
+  box-sizing: border-box;
+}
+
+.visionBlock {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.visionTitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #2F3C88;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.visionSlogan {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.timelineWrapper {
+  width: 100%;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  background: #F9F9F9;
+  border-radius: 0;
+  box-shadow: 0 2px 16px rgba(64,86,179,0.07);
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+.timeline {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.yearBlock {
+  background: none;
+  padding: 24px 0;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.year {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2F3C88;
+  margin-bottom: 8px;
+}
+
+.yearContent {
+  font-size: 1.05rem;
+  color: #222;
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 0 0 0;
+}
+
+.visionHeader {
+  margin-bottom: 36px;
+  text-align: left;
+} 

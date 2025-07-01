@@ -7,8 +7,8 @@ function Component1() {
     <section className={styles.heroSection}>
       <div className={styles.leftArea}>
         <div className={styles.textGroup}>
-          <p className={styles.subTitle}>Connecting technologies,<br/>expanding possibilities</p>
-          <h1 className={styles.title}>Seongmin's<br/>portfolio</h1>
+          <p className={styles.subTitle}>Lead the Automation <br/>Industry Market</p>
+          <h1 className={styles.title}>UNIB, Inc.</h1>
         </div>
         <div className={styles.slideNav}>
           <button className={styles.slideBtn} aria-label="이전 슬라이드">
